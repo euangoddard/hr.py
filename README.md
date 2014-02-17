@@ -21,6 +21,8 @@ The original version of the hr script was implement in bash (https://github.com/
 
 ## How to use it?
 
+### From the command-line:
+
     $ hr
     ################################## # Till the end of your terminal window
     $
@@ -40,5 +42,22 @@ You can also make "beautiful" ASCII patterns
     ----------------------------------
     -#--#--#--#--#--#--#--#--#--#--#--
 
+### From another python script (it could happen, right?)
+
+    >>> from hr import hr
+    >>> hr()
+    ################################## # Till the end of your terminal window
+    >>> hr('*')
+    ********************************** # Till the end of your terminal window
+    >>> hr('-', '#', '-')
+    ----------------------------------
+    ##################################
+    ----------------------------------
+    >>> hr('-#-', '-', '-#-')
+    -#--#--#--#--#--#--#--#--#--#--#--
+    ----------------------------------
+    -#--#--#--#--#--#--#--#--#--#--#--
+
+## Requirements
 
 The only requirement is python (tested in python 2.7)
