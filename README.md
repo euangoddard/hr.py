@@ -15,9 +15,12 @@ The original version of the hr script was implement in bash (https://github.com/
 
 ## Setup
 
+    $ pip install hr
+
+Or if you want the latest version from github:
+
     $ pip install git+git://github.com/euangoddard/hr.py.git
 
-*NB* PyPI release coming soon!
 
 ## How to use it?
 
