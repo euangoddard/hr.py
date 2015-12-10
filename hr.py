@@ -4,7 +4,7 @@
 # The MIT License (MIT)    
 #
 # Copyright (c) 2013 Gil Gonçalves
-# Copyright (c) 2014 Euan Goddard
+# Copyright (c) 2014-2015 Euan Goddard
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -23,6 +23,7 @@
 # LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
+from __future__ import print_function
 
 import math
 import os
@@ -37,7 +38,7 @@ def hr(*symbols):
     for symbol in symbols:
         repeat_count = int(math.ceil(float(cols) / len(symbol)))
         output = symbol * repeat_count
-        print output[:cols]
+        print(output[:cols])
 
 
 def cli():
